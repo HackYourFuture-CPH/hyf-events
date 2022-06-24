@@ -1,0 +1,179 @@
+body {
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+}
+
+h1 {
+  color: #293a7d;
+  font-family: "Space Mono", monospace;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+header .logo {
+  padding: 0.6;
+  margin-top: -0.5em;
+  transform: scale(2) translate(25%, 27%);
+}
+
+nav {
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+nav a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+nav a.selected {
+  text-decoration: underline;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.load {
+  background-color: #293a7d;
+  border: none;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.7rem 1rem;
+}
+
+main {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  color: #6f7287;
+  margin: 1rem 1rem 1rem 0;
+  text-align: left;
+  width: 20%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  color: #39364f;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card .date {
+  color: #f05537;
+  font-weight: 700;
+}
+
+.card div {
+  padding: 1.2rem 0.8rem;
+}
+
+.search {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.search input {
+  border: 1px solid rgba(204, 204, 204, 0.6);
+  border-radius: 0.05rem;
+  font-size: 0.8em;
+  outline: none;
+  padding: 0.8em;
+  width: 20rem;
+}
+
+table {
+  font-size: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+thead {
+  background-color: #293a7d;
+  color: #fff;
+  font-weight: bold;
+}
+
+thead th,
+tbody td {
+  padding: 0.05rem 0.5rem;
+}
+
+.pagination {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+main.graphs {
+  display: flex;
+  justify-content: center;
+}
+
+.graphs h1 {
+  padding: 1rem 2.3rem;
+}
+
+.recharts-responsive-container {
+  display: block;
+  text-align: center;
+  width: 100% !important;
+  height: 60vh !important;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .logo {
+    margin-top: -0.2rem;
+  }
+
+  .logo img {
+    height: 2rem;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
