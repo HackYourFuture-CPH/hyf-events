@@ -28,7 +28,7 @@ export const UpcomingEvents = ({
     data && data.length === 0 && setLoading(false); setNoResults(true);
     data && data.length > 0 && setLoading(false); setNoResults(false);
   }, [data]);
-console.log(loading,noResults, data);
+
   return (
     <>
       <Header />
